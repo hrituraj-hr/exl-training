@@ -21,3 +21,13 @@ def calculate_average(numbers):
     # Calculate and print the average
 average = calculate_average(random_numbers)
 print("Average of random numbers:", average)
+
+def calculate_variance(numbers):
+    mean = calculate_average(numbers)
+    squared_differences = [(x - mean) ** 2 for x in numbers]
+    return calculate_average(squared_differences)
+
+
+# Calculate and print the variance
+variance = calculate_variance(random_numbers)
+print("Variance of random numbers:", variance)
